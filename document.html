@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>My First Webpage</title>
+        <style>
+ /* Carousel Container */
+.logo-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+
+/* Carousel Track */
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+/* Carousel Item */
+.carousel-item {
+  min-width: 150px;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Controls */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="logo-carousel">
+            <div class="carousel-track">
+              <div class="carousel-item">
+                <img src="Stallify images\Hitachi-Logo-1968-1992.png" alt="Logo 1">
+              </div>
+              <div class="carousel-item">
+                <img src="logo2.png" alt="Logo 2">
+              </div>
+              <div class="carousel-item">
+                <img src="logo3.png" alt="Logo 3">
+              </div>
+              <div class="carousel-item">
+                <img src="logo4.png" alt="Logo 4">
+              </div>
+              <div class="carousel-item">
+                <img src="logo5.png" alt="Logo 5">
+              </div>
+              <div class="carousel-item">
+                <img src="logo5.png" alt="Logo 5">
+              </div>
+              <div class="carousel-item">
+                <img src="logo5.png" alt="Logo 5">
+              </div>
+              <div class="carousel-item">
+                <img src="logo5.png" alt="Logo 5">
+              </div>
+              <div class="carousel-item">
+                <img src="logo5.png" alt="Logo 5">
+              </div>
+              <div class="carousel-item">
+                <img src="logo5.png" alt="Logo 5">
+              </div>
+              <div class="carousel-item">
+                <img src="logo5.png" alt="Logo 5">
+              </div>
+            </div>
+            <button class="carousel-control prev">‹</button>
+            <button class="carousel-control next">›</button>
+          </div>
+          <script>
+            const track = document.querySelector('.carousel-track');
+const items = Array.from(track.children);
+const prevButton = document.querySelector('.carousel-control.prev');
+const nextButton = document.querySelector('.carousel-control.next');
+
+let currentIndex = 0;
+
+const updateCarousel = (index) => {
+  const itemWidth = items[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${index * (itemWidth + 24)}px)`;
+};
+
+prevButton.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel(currentIndex);
+  }
+});
+
+nextButton.addEventListener('click', () => {
+  if (currentIndex < items.length - 1) {
+    currentIndex++;
+    updateCarousel(currentIndex);
+  }
+});
+
+          </script>
+          
+          
+    </body>
+</html>

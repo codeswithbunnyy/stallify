@@ -1,0 +1,129 @@
+.section-2 {
+    background-color: #f5f5f5;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .section_wrapper {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tes-designer-manufacturer {
+    text-align: center;
+  }
+  
+  .tes-designer-manufacturer h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .tes-designer-manufacturer p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .tes-designer-manufacturer strong {
+    font-weight: 800;
+  }
+  
+  .tes-designer-manufacturer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .tes-designer-manufacturer a:hover {
+    text-decoration: underline;
+  }
+  
+  .tes-designer-manufacturer-list {
+    margin-bottom: 30px;
+  }
+  
+  .tes-designer-manufacturer-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tes-designer-manufacturer-list li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .tes-designer-manufacturer-list li i {
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .tes-designer-manufacturer-youtube {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .tes-designer-manufacturer-youtube .rll-youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .tes-designer-manufacturer-youtube img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .tes-designer-manufacturer-youtube .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  .plain-cta-container {
+    margin-top: 40px;
+  }
+  
+  .cta-content h5 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .cta-button .btn {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-button .btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .text-youtube-container{
+      display: flex;
+  }
+  
+  .text-container{
+      width: 60%;
+  }
+  
+  .youtube-container{
+      width: 40%;
+  }
